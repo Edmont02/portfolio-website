@@ -1,0 +1,141 @@
+/*Colors for webpage*/
+:root {
+    --bg-main: #111;
+    --bg-header: #1a1a1a;
+    --bg-card: #1f1f1f;
+
+    --text-main: #e6e6e6;
+    --text-dim: #bfbfbf;
+
+    --accent: #2f6f6f;
+    --accent-hover: #3f8f8f;
+}
+
+/*Body Styling*/
+
+body {
+    margin: 0;
+    font-family: "Google Sans Code", monospace;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+/*Header Styling*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: var(--bg-header);
+    border-bottom: 1px solid #333;
+}
+
+#header-nav {
+    display: flex;
+    gap: 10px;
+}
+
+#header-nav button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#header-nav button:hover {
+    background-color: var(--accent);
+}
+
+/*Home Intro Styling*/
+
+.hero {
+    padding: 60px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/*Left Home Intro*/
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 42px;
+}
+
+.left b {
+    color: var(--accent);
+}
+
+.left p {
+    font-size: 18px;
+    color: var(--text-dim);
+}
+
+/*Contact and About Buttons for Intro Home*/
+
+.hero-btn-grp {
+    margin-top: 20px;
+}
+
+.hero-btn-grp a {
+    text-decoration: none;
+    padding: 10px 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background-color: var(--accent);
+    color: white;
+}
+
+.contact-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.about-btn {
+    background-color: #333;
+    color: white;
+}
+
+.about-btn:hover {
+    background-color: #555;
+}
+
+/*Right Home Intro*/
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Home Image Styling*/
+
+.img-box {
+    width: 260px;
+    height: 260px;
+    border-radius: 200px;
+    overflow: hidden;
+    border: 2px solid var(--accent);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
